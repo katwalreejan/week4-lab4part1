@@ -1,14 +1,9 @@
-const App = () => {
-  const headingStyle = {
-    color: 'blue',
-    fontSize: '24px',
-    textAlign: 'center',
-  };
+import "./styles.css";
 
+const App = () => {
   return (
     <div>
-      <h1 style={headingStyle}>Inline Styles</h1>
-      <p style={{ color: 'green' }}>This is a green paragraph.</p>
+      <h1 className="external-heading">External CSS Styles</h1>
     </div>
   );
 };
