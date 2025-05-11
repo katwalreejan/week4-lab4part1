@@ -1,11 +1,28 @@
-import "./styles.css";
+import Card from "./Card";
 
-const App = () => {
+function App() {
   return (
     <div>
-      <h1 className="external-heading">External CSS Styles</h1>
+      <Card
+        displayName={"Mike Smith"}
+        bio={"Head of Security at Startup.io and avid conference speaker."}
+      />
+      <Card
+        displayName={"John Michaelson"}
+        bio={"Passionate Blockchain Engineer."}
+      />
+      <Card
+        displayName={"Amanda Johnson"}
+        bio={
+          "COO at Noodle. Passionate about providing our clients with the best possible services."
+        }
+      />
+      <Card
+        displayName={"Gary McKnight"}
+        bio={"Front-End Tech Lead & Book Writer."}
+      />
     </div>
   );
-};
+}
 
 export default App;
